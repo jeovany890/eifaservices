@@ -89,8 +89,65 @@ const setupForm = () => {
     }
 };
 
+// Modals Handler
+const setupModals = () => {
+    const modalContainer = document.getElementById('modal-container');
+    if (!modalContainer) return;
+
+    const openBtns = document.querySelectorAll('[data-modal-target]');
+    const closeBtns = document.querySelectorAll('.modal-close');
+    const contactBtns = document.querySelectorAll('.btn-modal-contact'); // "Demander devis" inside modal
+
+    // Open
+    openBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetId = btn.getAttribute('data-modal-target');
+            const targetModal = document.getElementById(targetId);
+
+            if (targetModal) {
+                modalContainer.classList.add('active');
+
+                // Hide all other modals first
+                document.querySelectorAll('.modal-content').forEach(m => m.classList.remove('active'));
+
+                // Show target
+                targetModal.classList.add('active');
+            }
+        });
+    });
+
+    // Close function
+    const closeModal = () => {
+        modalContainer.classList.remove('active');
+        setTimeout(() => {
+            document.querySelectorAll('.modal-content').forEach(m => m.classList.remove('active'));
+        }, 300); // Wait for transition
+    };
+
+    // Close Triggers
+    closeBtns.forEach(btn => btn.addEventListener('click', closeModal));
+
+    // Close on backdrop click
+    modalContainer.addEventListener('click', (e) => {
+        if (e.target === document.querySelector('.modal-backdrop') || e.target === modalContainer) {
+            closeModal();
+        }
+    });
+
+    // Close on "Demander Devis" click (scrolls to contact)
+    contactBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            closeModal();
+            // Smooth scroll to contact is handled by anchor default or lenis if installed, 
+            // but standard HTML anchor works fine here.
+        });
+    });
+};
+
 document.addEventListener('DOMContentLoaded', () => {
     setupMobileMenu();
     setupScrollEffects();
     setupForm();
+    setupModals();
 });
