@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="EIFA SERVICE Bénin : Expert en maintenance machines à glace, installation chambres froides, climatisation, cuisines modernes et fours boulangerie.">
+    <title>EIFA SERVICE | Froid, Climatisation & Cuisines Pro au Bénin</title>
+
+    <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <div class="logo-svg-container">
+                    <svg width="50" height="40" viewBox="0 0 100 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- House Contour -->
+                        <path d="M5 40L50 5L95 40V75H5V40Z" stroke="white" stroke-width="4" stroke-linejoin="round" />
+                        <path d="M50 5V75" stroke="white" stroke-width="3" />
+
+                        <!-- Snowflake (Blue Side - Left) -->
+                        <path d="M28 55V35M18 45H38M21 38L35 52M21 52L35 38" stroke="#06B6D4" stroke-width="3"
+                            stroke-linecap="round" />
+
+                        <!-- Sun (Orange Side - Right) -->
+                        <circle cx="72" cy="45" r="7" fill="#F59E0B" />
+                        <path d="M72 30V34M72 56V60M57 45H61M83 45H87M61 34L64 37M80 53L83 56M61 56L64 53M80 37L83 34"
+                            stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-title">ETS E.I.F.A</span>
+                    <span class="logo-subtitle text-gradient">SERVICES</span>
+                </div>
+            </a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#accueil" class="nav-link">Accueil</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#galerie" class="nav-link">Réalisations</a></li>
+                <li><a href="#contact" class="nav-link btn-cta">Devis Gratuit</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-bg-parallax" id="hero-bg"></div>
+        <div class="hero-overlay-dark"></div>
+        <div class="hero-content container">
+            <div class="hero-content-wrapper fade-in-up">
+                <span class="hero-badge">EXPERT MULTI-SERVICES</span>
+                <h1 class="hero-title-display">ETS E.I.F.A SERVICES<br><span class="hero-highlight">FROID • ÉLEC •
+                        BTP</span></h1>
+                <p class="hero-subtitle">Votre partenaire de confiance pour l'électricité industrielle, la climatisation
+                    et les travaux BTP au Bénin.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary glow-effect">Demander un Devis</a>
+                    <a href="#services" class="btn btn-outline-white">Nos Solutions</a>
+                </div>
+            </div>
+        </div>
+        <a href="#services" class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Découvrir</span>
+        </a>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services">
+        <div class="container">
+            <div class="section-header text-center hidden">
+                <span class="subtitle">Notre Expertise</span>
+                <h2>Solutions Techniques <span class="text-gradient">Complètes</span></h2>
+                <p>Installation, maintenance et import pour le froid et la cuisson.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card glass-card hidden delay-100">
+                    <div class="card-glow"></div>
+                    <div class="icon-box gradient-bg">
+                        <i class="fa-solid fa-cube"></i>
+                    </div>
+                    <h3>Machines à Glace</h3>
+                    <p>Expertise en maintenance et contrats d'entretien pour vos machines à glace. Fiabilité garantie.
+                    </p>
+                    <a href="#contact" class="link-arrow">Devis Maintenance <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card glass-card hidden delay-200">
+                    <div class="card-glow"></div>
+                    <div class="icon-box gradient-bg">
+                        <i class="fa-solid fa-temperature-arrow-down"></i>
+                    </div>
+                    <h3>Chambres Froides</h3>
+                    <p>Installation professionnelle de chambres froides positives et négatives pour tous secteurs.</p>
+                    <a href="#contact" class="link-arrow">Installation <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card glass-card hidden delay-300">
+                    <div class="card-glow"></div>
+                    <div class="icon-box gradient-bg">
+                        <i class="fa-solid fa-fan"></i>
+                    </div>
+                    <h3>Climatisation</h3>
+                    <p>Installation et entretien de climatiseurs (Split, Cassette, Central) pour particuliers et pros.
+                    </p>
+                    <a href="#contact" class="link-arrow">Devis Clim <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card glass-card hidden delay-400">
+                    <div class="card-glow"></div>
+                    <div class="icon-box gradient-bg-warm">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3>Électricité</h3>
+                    <p>Electricité industrielle et bâtiment. Installation, câblage et mise aux normes.</p>
+                    <a href="#contact" class="link-arrow">Devis Élec <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card glass-card hidden delay-300">
+                    <div class="card-glow"></div>
+                    <div class="icon-box gradient-bg-warm">
+                        <i class="fa-solid fa-fire-burner"></i>
+                    </div>
+                    <h3>Cuisines & Fours</h3>
+                    <p>Installation cuisines modernes, hottes et fours de boulangerie.</p>
+                    <a href="#contact" class="link-arrow">Nous contacter <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-card glass-card hidden delay-400">
+                    <div class="card-glow"></div>
+                    <div class="icon-box gradient-bg">
+                        <i class="fa-solid fa-hard-hat"></i>
+                    </div>
+                    <h3>BTP & Travaux</h3>
+                    <p>Tous travaux liés aux bâtiments et travaux publics. Prestations de services complètes.</p>
+                    <a href="#contact" class="link-arrow">Plus d'infos <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galerie" class="section bg-dark gallery">
+        <div class="container">
+            <div class="section-header text-center hidden">
+                <span class="subtitle">Portfolio</span>
+                <h2>Nos Réalisations <span class="text-gradient">Récents</span></h2>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item hidden">
+                    <img src="https://images.unsplash.com/photo-1595430342371-1574f1c6d31f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Installation 1">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h4>Machine Industrielle</h4>
+                            <p>Installation Cotonou</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item hidden">
+                    <img src="https://images.unsplash.com/photo-1587560699334-cc4da63c24b9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Installation 2">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h4>Chambre Froide</h4>
+                            <p>Secteur Hôtellerie</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item hidden">
+                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Installation 3">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h4>Maintenance</h4>
+                            <p>Intervention Rapide</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item hidden">
+                    <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Installation 4">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h4>Audit Technique</h4>
+                            <p>Mise aux normes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials">
+        <div class="container">
+            <div class="section-header text-center hidden">
+                <span class="subtitle">Avis Clients</span>
+                <h2>Ils nous font <span class="text-gradient">Confiance</span></h2>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card glass-card hidden">
+                    <div class="quote-icon gradient-text"><i class="fa-solid fa-quote-left"></i></div>
+                    <p class="review-text">"Un professionnalisme rare. L'installation de notre parc de machines à glace
+                        s'est faite sans accrocs."</p>
+                    <div class="client-info">
+                        <div class="avatar gradient-bg"><span>JH</span></div>
+                        <div>
+                            <h4>Jean H.</h4>
+                            <small>Restaurateur, Cotonou</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card glass-card hidden">
+                    <div class="quote-icon gradient-text"><i class="fa-solid fa-quote-left"></i></div>
+                    <p class="review-text">"Grâce à leur système de gestion à distance, nous avons évité une perte de
+                        marchandise importante."</p>
+                    <div class="client-info">
+                        <div class="avatar gradient-bg"><span>AD</span></div>
+                        <div>
+                            <h4>Amina D.</h4>
+                            <small>Gérante Supermarché</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card glass-card hidden">
+                    <div class="quote-icon gradient-text"><i class="fa-solid fa-quote-left"></i></div>
+                    <p class="review-text">"Intervention rapide et efficace même le week-end. Une équipe technique
+                        vraiment compétente."</p>
+                    <div class="client-info">
+                        <div class="avatar gradient-bg"><span>MT</span></div>
+                        <div>
+                            <h4>Marc T.</h4>
+                            <small>Directeur d'Usine</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="contact-card glass-card hidden">
+                <div class="contact-info">
+                    <div class="glow-circle"></div>
+                    <h3>Parlons de votre projet</h3>
+                    <p>Besoin d'un devis ou d'une intervention ? Notre équipe est à votre écoute.</p>
+
+                    <div class="info-list">
+                        <div class="info-item">
+                            <div class="icon-circle"><i class="fa-solid fa-location-dot"></i></div>
+                            <span>Cotonou, Bénin</span>
+                        </div>
+                        <div class="info-item">
+                            <div class="icon-circle"><i class="fa-solid fa-phone"></i></div>
+                            <span>01 98 19 49 83</span>
+                        </div>
+                        <div class="info-item">
+                            <div class="icon-circle"><i class="fa-solid fa-envelope"></i></div>
+                            <span>contact@eifaservice.com</span>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+
+                    <a href="https://wa.me/2290198194983" class="btn btn-whatsapp glow-effect">
+                        <i class="fa-brands fa-whatsapp"></i> WhatsApp Direct
+                    </a>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nom complet</label>
+                            <input type="text" id="name" required placeholder="Votre nom">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required placeholder="votre@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone" required placeholder="+229...">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="4" required
+                                placeholder="Détails de votre besoin..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block glow-effect">Envoyer la demande</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h2>ETS E.I.F.A SERVICES</h2>
+                    <p>Froid, Electricité, BTP & Fournitures.</p>
+                </div>
+                <div class="footer-links-group">
+                    <a href="#">Mentions Légales</a>
+                    <a href="#">Politique de Confidentialité</a>
+                    <a href="#">Plan du site</a>
+                </div>
+            </div>
+            <div class="footer-bottom text-center">
+                <p>&copy; 2026 EIFA SERVICE. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
